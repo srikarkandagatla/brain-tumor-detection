@@ -30,6 +30,7 @@ Both implementations incorporate a custom callback function designed to halt tra
 |-------------------------|---------------------------|
 | Custom Model (BTD_GPU)  | 150x150, 192x192, 224x224 |
 | Pre-trained VGG16 Model | 192x192, 224x224          |
+
 **Table – 1:** All models in this folder were trained until they first achieved validation accuracies of 0.85 and 0.95, using a custom callback function to halt training.
 
 ## Results
@@ -47,6 +48,7 @@ The models "BTD" and "VGG_BTD" are allowed to be trained for a maximum of 1000 e
 | 224 x 224  | 35     | 0.8741   | 0.3572 | 0.8619       | 0.3549   | 3040    |
 | VGG (192)  | 1      | 0.8318   | 0.4579 | 0.8734       | 0.2987   | 41      |
 | VGG (224)  | 1      | 0.8349   | 0.4790 | 0.8886       | 0.3167   | 50      |
+
 **Table – 2:** The training paused when the model achieved a validation accuracy of 0.85 or higher for the first time.
 
 **b) Custom Callback Function (0.95 ≤ val_accuracy)**
