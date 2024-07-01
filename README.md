@@ -48,7 +48,7 @@ The models "BTD" and "VGG_BTD" are allowed to be trained for a maximum of 1000 e
 ### Training Details
 **a) Custom Callback Function (0.85 ≤ val_accuracy)**
 | Size       | Epochs | Accuracy | Loss   | Val Accuracy | Val Loss | Time(s) |
-|------------|--------|----------|--------|--------------|----------|---------|
+|:-----------|:------:|:--------:|:------:|:------------:|:--------:|:-------:|
 | 150 x 150  | 29     | 0.8554   | 0.4116 | 0.8825       | 0.3209   | 1772    |
 | 192 x 192  | 32     | 0.8477   | 0.4151 | 0.8535       | 0.4005   | 2379    |
 | 224 x 224  | 35     | 0.8741   | 0.3572 | 0.8619       | 0.3549   | 3040    |
