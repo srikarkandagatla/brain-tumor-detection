@@ -47,7 +47,7 @@ The models "BTD" and "VGG_BTD" are allowed to be trained for a maximum of 1000 e
 
 ### Training Details
 **a) Custom Callback Function (0.85 ≤ val_accuracy)**
-| Size       | Epochs | Accuracy | Loss   | Val Accuracy | Val Loss | Time(s) |
+| Size       | Epochs | Accuracy | Loss   | Val Accuracy | Val Loss | Time(Sec) |
 |:-----------|:------:|:--------:|:------:|:------------:|:--------:|:-------:|
 | 150 x 150  | 29     | 0.8554   | 0.4116 | 0.8825       | 0.3209   | 1772    |
 | 192 x 192  | 32     | 0.8477   | 0.4151 | 0.8535       | 0.4005   | 2379    |
@@ -58,7 +58,7 @@ The models "BTD" and "VGG_BTD" are allowed to be trained for a maximum of 1000 e
 **Table – 2:** The training paused when the model achieved a validation accuracy of '0.85' or higher for the first time.
 
 **b) Custom Callback Function (0.95 ≤ val_accuracy)**
-| Size       | Epochs | Accuracy | Loss   | Val Accuracy | Val Loss | Time(s) |
+| Size       | Epochs | Accuracy | Loss   | Val Accuracy | Val Loss | Time(Sec) |
 |------------|--------|----------|--------|--------------|----------|---------|
 | 150 x 150  | <div align="center">110</div> | <div align="center">0.9412</div> | <div align="center">0.1723</div> | <div align="center">0.9527</div> | <div align="center">0.1659</div> | <div align="center">6593</div> |
 | 192 x 192  | <div align="center">107</div> | <div align="center">0.9461</div> | <div align="center">0.1619</div> | <div align="center">0.95124</div> | <div align="center">0.1394</div> | <div align="center">7658 </div> |
