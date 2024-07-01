@@ -40,7 +40,7 @@ These values are expressed as ratios between the correctly predicted samples and
 The models "BTD" and "VGG_BTD" are allowed to be trained for a maximum of 1000 epochs, until they achieve a validation accuracy of 0.85 under the conditions described in table - 1.
 
 ### Training Details
-**a) Custom Callback Function (0.85 ≤ val_accuracy)**.
+**a) Custom Callback Function (0.85 ≤ val_accuracy)**
 | Size       | Epochs | Accuracy | Loss   | Val Accuracy | Val Loss | Time(s) |
 |------------|--------|----------|--------|--------------|----------|---------|
 | 150 x 150  | 29     | 0.8554   | 0.4116 | 0.8825       | 0.3209   | 1772    |
