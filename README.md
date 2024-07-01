@@ -4,7 +4,7 @@ Brain tumor detection using CNN for multi-class classification.
 ## About Dataset
 The dataset comprises two main folders, "training" and "testing," encompassing 5712 MRI scan images of brains in the training set. These images are categorized into four classes: Glioma, Meningioma, No Tumor, and Pituitary. The testing set mirrors this structure but contains 1311 images.
 
-You can access the dataset [here](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/)
+You can access the dataset [here](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/).
 
 ## Repository Overview
 This repository contains four folders named Accuracy(0.85), Accuracy(0.95), 'Brain Tumor Detection (VGG16).ipynb', and 'Brain Tumor Detection.ipynb' which represent the accuracy thresholds at which the training of models has stopped using a custom stopping function.
