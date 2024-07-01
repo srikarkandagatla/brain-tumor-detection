@@ -6,15 +6,21 @@ The dataset comprises two main folders, "training" and "testing," encompassing 5
 
 You can access the dataset here: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/
 
-## About Repository
-Within this repository, you'll find two Python notebooks, "Brain Tumor Detection.ipyb" and "Brain Tumor Detection (VGG16).ipyb".
+## Repository Overview
+This repository contains two folders named 0.85 and 0.95, which represent the accuracy thresholds at which the training of models has stopped using a custom stopping function.
 
-### Brain Tumor Detection.ipyb
-In "Brain Tumor Detection.ipynb," a Convolutional Neural Network (CNN) model is implemented, with an input size of 150x150 pixels in RGB colors. The Convolutional Neural Network (CNN) part consists of multiple convolutional layers followed by max-pooling layers. Augmentation techniques from the ImageDataGenerator class are applied to enhance model performance. The achieved validation accuracy is approximately 88.33%, demonstrating effectiveness during testing.
+## Accuracy (0.85)
+- The 0.85 folder includes 5 Jupyter notebooks (.ipynb files) where two models are utilized:
+ - Custom Model (BTD_GPU)
+ - Pre-trained VGG16 Model
 
-### Brain Tumor Detection (VGG16).ipyb
-In the second notebook, "Brain Tumor Detection (VGG16).ipynb," a transfer learning approach is employed using the pre-trained VGG-16 model, originally trained on the ImageNet Dataset. The input size for this model is 224x224 pixels in all three color channels. Notably, the model attains a commendable validation accuracy score of 95.80% on testing images.
+- Training Details:
+ - Custom Model (BTD_GPU): Trained on three different input sizes (150x150, 192x192, 224x224).
+ - VGG16 Model: Trained on two input sizes (192x192, 224x224).
+All models in this folder were trained until they first achieved a validation accuracy of 0.85, using a custom callback function to halt training.
 
+## Accuracy (0.95)
+The 0.95 folder contains the same models as in the 0.85 folder, with identical input sizes and configurations. However, these models were allowed to train until they first achieved a validation accuracy of 0.95, using the same custom callback function.
+Each file in both folders includes the time taken for training each model.
 Both implementations incorporate a custom callback function designed to halt training when a specified accuracy score is achieved consecutively for a set number of times.
-
-Note: CNN stands for Convolutional Neural Network, and VGG-16 represents the 16-layer VGGNet architecture.
+ - Note: CNN stands for Convolutional Neural Network, and VGG-16 represents the 16-layer VGGNet architecture.
